@@ -9,19 +9,48 @@ import SwiftUI
 
 struct CartView: View {
     @ObservedObject var viewModel: ViewModel = ViewModel()
+    @State var total: Double = 0.00
+    @State var itemsInCart: Int = 0
+    
+    init() {
+        viewModel.getData()
+        
+    }
+    
     var body: some View {
-        Text("Title")
-        List{
-            ForEach(viewModel.productList, id: \.self){ item in
-                ItemView(viewModel: viewModel, item: item)
+        NavigationView {
+            VStack {
+                List{
+                    ForEach(viewModel.productList){ item in
+                        ItemView(total: self.$total, itemsInCart: $itemsInCart, item: item)
+                    }
+                }
+                .listStyle(PlainListStyle())
+                
+                if itemsInCart != 0 {
+                HStack{
+                    Spacer()
+                    Image(systemName: "cart")
+                        .font(.system(size: 20))
+                    Text("\(itemsInCart) products")
+                        .font(.mediumFont)
+                    
+                    Spacer()
+                    Spacer()
+                    
+                    Text(String(format: "Total: %.2fkr", total))
+                        .font(.mediumFont)
+                    Spacer()
+                }
+                }
+                
             }
-        }
-        .listStyle(PlainListStyle())
-        .onAppear {
-            viewModel.getData()
-        }
+                .navigationTitle("Shopping Cart")
+                .navigationBarTitleDisplayMode(.inline)
 
-        Text("Total: \(viewModel.totalPrice)")
+        }
+        
+
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8167FD6E27BE854C008BC7C1 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167FD6D27BE854C008BC7C1 /* ItemDetailView.swift */; };
 		81A2615D271936300050EAA6 /* Oda_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2615C271936300050EAA6 /* Oda_2_0App.swift */; };
 		81A2615F271936300050EAA6 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2615E271936300050EAA6 /* CartView.swift */; };
 		81A26161271936320050EAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A26160271936320050EAA6 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		81A2617A271936320050EAA6 /* Oda_2_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A26179271936320050EAA6 /* Oda_2_0UITestsLaunchTests.swift */; };
 		81A2618C2719379F0050EAA6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2618B2719379F0050EAA6 /* ViewModel.swift */; };
 		81A2618E271937F20050EAA6 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2618D271937F20050EAA6 /* ItemView.swift */; };
-		81A26192271944B90050EAA6 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A26191271944B90050EAA6 /* ButtonViewModel.swift */; };
 		81A2619627194CD80050EAA6 /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A2619527194CD80050EAA6 /* Color+Extention.swift */; };
 		81A26198271950B80050EAA6 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A26197271950B80050EAA6 /* ItemData.swift */; };
 		81FE694B271EAD2C00BDF8B6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 81FE694A271EAD2C00BDF8B6 /* SDWebImageSwiftUI */; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8167FD6D27BE854C008BC7C1 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		81A26159271936300050EAA6 /* Oda 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oda 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A2615C271936300050EAA6 /* Oda_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oda_2_0App.swift; sourceTree = "<group>"; };
 		81A2615E271936300050EAA6 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		81A26179271936320050EAA6 /* Oda_2_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oda_2_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		81A2618B2719379F0050EAA6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		81A2618D271937F20050EAA6 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
-		81A26191271944B90050EAA6 /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
 		81A2619527194CD80050EAA6 /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
 		81A26197271950B80050EAA6 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				81A2618B2719379F0050EAA6 /* ViewModel.swift */,
-				81A26191271944B90050EAA6 /* ButtonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,6 +163,7 @@
 			children = (
 				81A2615E271936300050EAA6 /* CartView.swift */,
 				81A2618D271937F20050EAA6 /* ItemView.swift */,
+				8167FD6D27BE854C008BC7C1 /* ItemDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,11 +314,11 @@
 			files = (
 				81A2618C2719379F0050EAA6 /* ViewModel.swift in Sources */,
 				81A2615F271936300050EAA6 /* CartView.swift in Sources */,
+				8167FD6E27BE854C008BC7C1 /* ItemDetailView.swift in Sources */,
 				81A26198271950B80050EAA6 /* ItemData.swift in Sources */,
 				81A2619627194CD80050EAA6 /* Color+Extention.swift in Sources */,
 				81A2615D271936300050EAA6 /* Oda_2_0App.swift in Sources */,
 				81A2618E271937F20050EAA6 /* ItemView.swift in Sources */,
-				81A26192271944B90050EAA6 /* ButtonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
